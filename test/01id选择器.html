@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>不推荐使用id选择器</title>
+    <style>
+      #id1 {
+        color: red;
+      }
+
+      #id2 {
+        background-color: lightblue;
+      }
+
+      .a {
+        color: deeppink;
+      }
+
+      .b {
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="id1">id选择器1</div>
+    <div id="id2">id选择器2</div>
+    <!-- 下面css样式无效 -->
+    <div id="id1 id2">id选择器1,2</div>
+    <div class="a">类选择器1</div>
+    <div class="a b">类选择器2</div>
+  </body>
+</html>
